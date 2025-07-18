@@ -7,8 +7,8 @@ A lightweight image classification model using **Transfer Learning** with **Effi
 - **Approach**:  
   - Base Model: `EfficientNetB0` (pre-trained on ImageNet)  
   - Hyperparameter Tuning: Learning rate, batch size, dropout layers  
-  - Augmentation: Random flip, rotation, zoom  
-- **Dataset**: Custom-curated dataset of ~1.5K images per class.  
+  - Augmentation: Crop, Resize, Interpolation
+- **Dataset**: Custom-curated dataset of 300 images in train and 100 images in test.  
 
 ## Performance Metrics
 | Metric          | Training | Validation | Test |
@@ -17,9 +17,3 @@ A lightweight image classification model using **Transfer Learning** with **Effi
 | Precision       | 98.0%    | 96.3%      | 95.5%|
 | Recall          | 98.1%    | 96.4%      | 95.7%|
 
-## Code Snippet (Hypertuning)
-```python
-model = EfficientNetB0(include_top=False, weights="imagenet")
-# Added custom dense layers with Dropout (0.3) and Adam optimizer (lr=1e-4)
-...
-history = model.fit(train_augmented, validation_data=val_data, epochs=20)
