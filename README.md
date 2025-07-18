@@ -23,4 +23,4 @@ A lightweight image classification model using **Transfer Learning** with **Effi
 
 
 The notebook has a detailed flowchart by importing data,getting the model architecture,evaluating the model and calculating its evaluation metrics.  
-OPEN IN COLAB-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NqkjLkG7n9DknK5hgw19EAmHemH6A1bK?usp=sharing)
+OPEN IN COLAB:[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NqkjLkG7n9DknK5hgw19EAmHemH6A1bK?usp=sharing)
